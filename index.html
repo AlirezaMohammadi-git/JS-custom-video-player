@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom video player</title>
+</head>
+
+<body>
+
+
+  <main class="main-container">
+    <video class="videoPlayer" width="320" height="240" autoplay>
+
+      <source src="https://archive.org/download/ElephantsDream/ed_hd.avi" type="video/avi" />
+      <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4" />
+      Your browser
+      doesn't support the
+      video
+    </video>
+    <div class="controls">
+      <button id="btn-play">Play</button>
+      <button id="btn-forward">5>></button>
+      <button id="btn-backward">backward</button>
+      <div>
+        <img src="images/speacker.png" alt="">
+        <input id="volumeRange" type="range" min="0" max="10">
+      </div>
+      <div>
+        <p class="current__duration">1:54</p>
+        <input id="videoRange" type="range">
+        <p class="total__duration">4:54</p>
+      </div>
+      <img class="icon fullscreen" src="images/expand.png" alt="fullScreen">
+
+    </div>
+  </main>
+
+
+  <script src="app.js">
+  </script>
+</body>
+
+</html>
